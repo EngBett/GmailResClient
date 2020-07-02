@@ -14,7 +14,7 @@ namespace GmailRestApi
             var gmailRepo = new Repository();
             List<Message> messages = gmailRepo.ListMessages(gmailService, "me", "");
             
-            Console.WriteLine(messages[0].Id);
+            Console.WriteLine(messages[0].Payload.Parts[0]);
             
             
         }
