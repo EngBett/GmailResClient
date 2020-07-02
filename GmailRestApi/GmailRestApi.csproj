@@ -5,4 +5,15 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Google.Apis.Gmail.v1" Version="1.47.0.2005" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="credentials.json" />
+      <Content Include="credentials.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
