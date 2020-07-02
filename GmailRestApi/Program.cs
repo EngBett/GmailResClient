@@ -10,23 +10,14 @@ namespace GmailRestApi
         static void Main(string[] args)
         {
             
-            /*var gmailService = new GService().Service();
+            var gmailService = new GService().Service();
             var gmailRepo = new Repository();
             List<Message> messages = gmailRepo.ListMessages(gmailService, "me", "");
-
-            foreach (var message in messages)
-            {
-                
-            }*/
             
-            print("hello");
+            Console.WriteLine(messages[0].Id);
             
-            Console.Read();
+            
         }
-
-        static void print(Object obj)
-        {
-            Console.WriteLine(obj);
-        }
+        
     }
 }

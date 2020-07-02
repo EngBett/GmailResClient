@@ -8,5 +8,6 @@ namespace GmailRestApi
     public interface IRepository
     {
         List<Message> ListMessages(GmailService service, String userId, String query);
+        
     }
 }

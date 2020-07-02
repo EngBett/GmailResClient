@@ -5,7 +5,7 @@ using Google.Apis.Gmail.v1.Data;
 
 namespace GmailRestApi
 {
-    public class Repository:IRepository
+    public class Repository : IRepository
     {
         public List<Message> ListMessages(GmailService service, string userId, string query)
         {
@@ -29,5 +29,6 @@ namespace GmailRestApi
 
             return result;
         }
+        
     }
 }
